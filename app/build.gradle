@@ -5,7 +5,7 @@ android {
         test {
             keyAlias 'key0'
             keyPassword '123456'
-            storeFile file('/home/chengli/AndroidKeyStore/test.jks')
+            storeFile file('C:/Users/chengli/.gradle/test.jks')
             storePassword '123456'
         }
     }

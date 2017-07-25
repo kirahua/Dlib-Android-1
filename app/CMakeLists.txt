@@ -4,9 +4,9 @@ cmake_minimum_required(VERSION 3.4.1)
 
 add_subdirectory(src/main/cpp/dlib)
 
-add_library(native-lib SHARED src/main/cpp/native-lib.cpp src/main/cpp/VideoFaceDetector.cpp)
+add_library(native-lib SHARED src/main/cpp/native-lib.cpp)
 
-INCLUDE_DIRECTORIES(src/main/cpp src/main/cpp/include src/main/cpp/includ/opencv src/main/cpp/includ/opencv2)
+include_directories(src/main/cpp src/main/cpp/include src/main/cpp/includ/opencv src/main/cpp/includ/opencv2)
 
 find_library(log-lib log)
 
